@@ -1,1 +1,84 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab6</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav id="menu">
+            <a href="">Enlace 1</a>
+            <a href="">Enlace 2</a>
+            <a href="">Enlace 3</a>
+            <a href="">Enlace 4</a>
+            <a href="">Enlace 5</a>
+        </nav>
+    </header>
+    
+    <h1>Laboratorio #6: CSS Positions and Floating</h1>
+    <div>
+        <p>Cree un sitio HTML distribuido de la siguiente manera:</p>
+        <ol>
+            <li>Un menú de navegación colocado horizontalmente, cada enlace del menú debe tener un color de fondo, 
+                bordes redondeados y relleno para que sea visualmente agradable. (20 pts)</li><br>
+            <li>Un encabezado con el título del laboratorio y su información (Adecuarlo visualmente a su manera). (20 pts)</li><br>
+            <li>Una sección compuesta de 3 artículos, cada uno posee una imagen de 150x150px y una breve descripción que 
+                sobrepase el tamaño del contenedor para cortarlo con un enlace simulando el efecto de “ver más”. 
+                CADA ARTÍCULO DEBE ESTAR AL LADO DEL OTRO COMO UN CONJUNTO DE 3 COLUMNAS. (20 pts)</li><br>
+            <li>Una sección con una imagen alargada horizontalmente con un texto sobre ella explicando la imagen. 
+                (Buscar efecto para opacar la imagen y permitir que el texto se visualice). (20 pts)</li><br>
+            <li>Un pie de página con el logo de la UTP a la izquierda y el logo de la FISC a la derecha con un tamaño de 150x150px. (20 pts)</li>
+        </ol>
+    </div>
+    <br>
+    <section id="sec1">
+        <article>
+            <h3>Artículo 1</h3>
+            <img src="imgs/img1.jpg" alt="">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur <span id="dots">...</span>
+                <span id="more"> adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, 
+                nisi lorem egestas vitae scelerisque enim ligula venenatis dolor.
+                </span>
+            </p>
+            <button id="myBtn">Ver más</button>
+        </article>
+        <article>
+            <h3>Artículo 2</h3>
+            <img src="imgs/img2.jpg" alt="">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur <span id="dots">...</span>
+                <span id="more"> adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, 
+                nisi lorem egestas vitae scelerisque enim ligula venenatis dolor.
+                </span>
+            </p>
+            <button id="myBtn">Ver más</button>
+        </article>
+        <article>
+            <h3>Artículo 3</h3>
+            <img src="imgs/img3.jpg" alt="">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur <span id="dots">...</span>
+                <span id="more"> adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, 
+                nisi lorem egestas vitae scelerisque enim ligula venenatis dolor.
+                </span>
+            </p>
+            <button>Ver más</button>
+        </article>
+    </section>
+    <br>
+    <section id="sec2">
+        <img src="imgs/banner.jpg" alt="" id="banner">
+        <h3 id="texto">Esta es una imagen de un atardecer en la playa</h3>
+        <!--<p id="texto">Esta es una imagen de un atardecer en la playa</p>-->
+    </section>
+    <br>
+    <footer>
+        <img src="imgs/utp_logo.png" alt="">
+        <img src="imgs/fisc_logo.png" alt="">
+    </footer>
+</body>
+</html>
